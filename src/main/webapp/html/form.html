@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style type="text/css">
+<!--
+@import url("form.css");
+-->
+
+</style>
+	<head>
+		<title>iframe Example</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+
+		
+	<script>
+			
+		function sf(){document.f.firstname.focus();}
+	
+	</script>
+	<body onLoad=sf()>
+
+		<form action="#" method="post" name="f">
+			<p>
+				<b>Bold</b> fields are required. <u>U</u>nderlined letters are accesskeys.
+			</p>
+			<fieldset>
+				<legend>
+					Personal Information
+				</legend>
+				<label for="firstname" >First name: </label>
+				<input type="text" id="firstname" name="firstname" tabindex="1" value="" title="first name">
+				<br>
+				<label for="lastname" >Last name: </label>
+				<input type="text" id="lastname" name="lastname" tabindex="2" title="last name">
+				<br>
+				<label for="email" class="required" >Email: </label>
+				<input type="text" id="email" name="email" tabindex="3" title="email">
+				<br>
+				<small>Your email address is safe with us, until we're acquired.</small>
+			</fieldset>
+			<fieldset>
+				<legend>
+					Comments
+				</legend>
+				<label for="comments" >Comments: </label>
+				<textarea name="comments" rows="3" cols="23" id="comments" tabindex="4" title="comments"></textarea>
+<br>				<label for="kludge"></label>
+				<input type="submit" value="Send" id="submit" tabindex="5">
+				<INPUT type="reset" id="reset" tabindex="6">
+			</fieldset>
+		</form>
+	</body>
+</html>
